@@ -1,3 +1,3 @@
-# General-Code-Examples
+# General-Code-Repo
 
-This repository includes some examples of my coding including homework assignments from university and practice problems. 
+This is a general purpose repo for experiments, proof-of-conepts, and examples.
