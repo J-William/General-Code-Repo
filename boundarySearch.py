@@ -2,7 +2,7 @@
 def boundary_search(arr: list[bool]):
     """
          Find the boundary in an array of boolean values that 
-        can be split cleanly between true/false entries. 
+        can be split cleanly between true/false subsets. 
     """
     boundary_index = -1
     left, right = 0, len(arr) -1
@@ -25,6 +25,7 @@ def boundary_search(arr: list[bool]):
 
 if __name__=='__main__':
     arr = [ False, False, False, True, True, True, True]
+    print(boundary_search(arr))
     arr.reverse()
     print(boundary_search(arr))
 
