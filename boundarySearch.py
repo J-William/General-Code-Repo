@@ -1,9 +1,8 @@
 
 def boundary_search_bool(arr: list[bool]) -> int:
     """
-        For a boolean array that can be cleanly divided into two
-        completely true/false subsets, find the boundary between
-        the true/false subsets.
+        For a boolean array that can be cleanly divided into two completely 
+        true/false subsets, find the boundary between the true/false subsets.
         Return the index of the boundary.
     """
     boundary_index = -1
@@ -28,7 +27,7 @@ def boundary_search_monotonic(arr: list[int|float], target: int = None) -> int:
     """
         For a monotonically increasing or decreasing array of numbers, find the
         boundary where the rest of the array is >= or <= a target number.
-        Returns the index of the boundary.
+        Return the index of the boundary.
     """
     boundary_index = -1
     left, right = 0, len(arr) -1
@@ -69,4 +68,7 @@ if __name__=='__main__':
     target = 7
     print(arr4, "Boundary: {0}, Target: {1}".format(boundary_search_monotonic(arr4, target), target))
     print("----------------------------------------------------------")
+
+
+
 
