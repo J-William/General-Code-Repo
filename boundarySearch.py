@@ -1,20 +1,20 @@
 
 def boundary_search_bool(arr: list[bool]) -> int:
     """
-        For a boolean array that can be cleanly divided into two completely 
+        For a boolean array that can be cleanly divided into two completely
         true/false subsets, find the boundary between the true/false subsets.
         Return the index of the boundary.
     """
     boundary_index = -1
-    left, right = 0, len(arr) -1
+    left, right = 0, len(arr) - 1
 
-    if arr[0] == False:
-        condition =  lambda x, y = None : x
+    if arr[0]:
+        condition = lambda x, y=None: not x
     else:
-        condition =  lambda x, y = None : not x
-    
+        condition = lambda x, y=None: x
+
     while left <= right:
-        mid = (left + right)//2        
+        mid = (left + right) // 2
         if condition(arr[mid]):
             boundary_index = mid
             right = mid - 1
