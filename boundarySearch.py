@@ -23,7 +23,7 @@ def boundary_search_bool(arr: list[bool]) -> int:
 
     return boundary_index
 
-def boundary_search_monotonic(arr: list[int|float], target: int = None) -> int:
+def boundary_search_monotonic(arr: list[int|float], target: int) -> int:
     """
         For a monotonically increasing or decreasing array of numbers, find the
         boundary where the rest of the array is >= or <= a target number.
